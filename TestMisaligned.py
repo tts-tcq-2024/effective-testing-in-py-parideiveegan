@@ -8,7 +8,7 @@ class TestPrintColourMap(unittest.TestCase):
      def assert_stdout(self,expected_output, mock_stdout):
           print_color_map()
           self.asserEqual(mock_stdout.getvalue(), expected_output)
-     def test_only_numbers(self):
+     def test_print_output(self):
           major_colors = ["White", "Red", "Black", "Yellow", "Violet"]
           minor_colors = ["Blue", "Orange", "Green", "Brown", "Slate"]
           mapping_output = ""
@@ -21,3 +21,6 @@ class TestPrintColourMap(unittest.TestCase):
                     output_string = number+ ' | ' + major + ' | ' + minor
                     mapping_output += output_string + '\n'       
           self.assert_stdout(mapping_output)
+
+        def test_return_result(self):
+            self.assertEqual(print_color_map(),25)
