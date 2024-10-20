@@ -4,7 +4,7 @@ def network_alert_stub(celcius):
     # Return 200 for ok
     # Return 500 for not-ok
     # stub always succeeds and returns 200
-    if __name__ != "__main__":
+    if __name__ != "__main__": # return not ok for the test environmnet to test failure count 
         return 500
     return 200
 
