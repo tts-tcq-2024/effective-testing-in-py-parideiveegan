@@ -21,6 +21,5 @@ class TestPrintColourMap(unittest.TestCase):
                     output_string = number+ ' | ' + major + ' | ' + minor
                     mapping_output += output_string + '\n'       
           self.assert_stdout(mapping_output)
-
-        def test_return_result(self):
-            self.assertEqual(print_color_map(),25)
+     def test_return_result(self):
+          self.assertEqual(print_color_map(),25)
