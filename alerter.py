@@ -26,6 +26,6 @@ def call_test_environment():
 
 alert_in_celcius(400.5)
 alert_in_celcius(303.6)
-call_test_environmnet()
+call_test_environment()
 print(f'{alert_failure_count} alerts failed.')
 print('All is well (maybe!)')
