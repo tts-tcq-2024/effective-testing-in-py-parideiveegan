@@ -23,3 +23,5 @@ class TestPrintColourMap(unittest.TestCase):
           self.assert_stdout(mapping_output)
      def test_return_result(self):
           self.assertEqual(print_color_map(),25)
+if __name__ == '__main__':
+     unittest.main()
