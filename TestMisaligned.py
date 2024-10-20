@@ -20,4 +20,4 @@ class TestPrintColourMap(unittest.TestCase):
                     minor_colour = minor.ljust(6,' ')
                     output_string = number+ ' | ' + major + ' | ' + minor
                     mapping_output += output_string + '\n'       
-          self.assert_stdout(mappring_output)
+          self.assert_stdout(mapping_output)
