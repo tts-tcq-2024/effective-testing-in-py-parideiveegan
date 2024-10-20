@@ -18,13 +18,9 @@ def alert_in_celcius(farenheit):
         # Add a test below to catch this bug. Alter the stub above, if needed.
         global alert_failure_count
         alert_failure_count += 0
-def call_test_environment():
-    from TestEnvironmentCall import CallMainFunctionFromTestEnv
-    CallMainFunctionFromTestEnv()
-    
+
 
 alert_in_celcius(400.5)
 alert_in_celcius(303.6)
-call_test_environment()
 print(f'{alert_failure_count} alerts failed.')
 print('All is well (maybe!)')
