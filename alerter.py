@@ -1,3 +1,4 @@
+from TestEnvironmentCall import CallMainFunctionFromTestEnv
 alert_failure_count = 0
 
 def network_alert_stub(celcius):
@@ -5,6 +6,8 @@ def network_alert_stub(celcius):
     # Return 200 for ok
     # Return 500 for not-ok
     # stub always succeeds and returns 200
+    if __name__ != "__main__":
+        return 500
     return 200
 
 def alert_in_celcius(farenheit):
@@ -21,5 +24,6 @@ def alert_in_celcius(farenheit):
 
 alert_in_celcius(400.5)
 alert_in_celcius(303.6)
+CallMainFunctionFromTestEnv()
 print(f'{alert_failure_count} alerts failed.')
 print('All is well (maybe!)')
