@@ -1,6 +1,4 @@
-from TestEnvironmentCall import CallMainFunctionFromTestEnv
 alert_failure_count = 0
-
 def network_alert_stub(celcius):
     print(f'ALERT: Temperature is {celcius} celcius')
     # Return 200 for ok
@@ -21,6 +19,7 @@ def alert_in_celcius(farenheit):
         global alert_failure_count
         alert_failure_count += 0
 def call_test_environment():
+    from TestEnvironmentCall import CallMainFunctionFromTestEnv
     CallMainFunctionFromTestEnv()
     
 
