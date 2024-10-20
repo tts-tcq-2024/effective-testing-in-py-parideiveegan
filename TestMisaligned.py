@@ -9,7 +9,7 @@ class TestPrintColourMap(unittest.TestCase):
      def assert_stdout(self,expected_output, mock_stdout):
           print_color_map()
           self.assertEqual(mock_stdout.getvalue(), expected_output)
-     def test_print_output(self):
+     def test_IsPrintOutputAligned(self):
           mapping_output = AlignedOutput()
           self.assert_stdout(mapping_output)
      def test_return_result(self):
