@@ -7,7 +7,7 @@ class TestPrintColourMap(unittest.TestCase):
      @unittest.mock.patch('sys.stdout', new_callable=io.StringIO)
      def assert_stdout(self,expected_output, mock_stdout):
           print_color_map()
-          self.asserEqual(mock_stdout.getvalue(), expected_output)
+          self.assertEqual(mock_stdout.getvalue(), expected_output)
      def test_print_output(self):
           major_colors = ["White", "Red", "Black", "Yellow", "Violet"]
           minor_colors = ["Blue", "Orange", "Green", "Brown", "Slate"]
